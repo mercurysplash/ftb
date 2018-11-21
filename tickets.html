@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Билеты </title>
+    <link rel="stylesheet" type="text/css" href="header_nav_footer.css">
+    <link rel="stylesheet" type="text/css" href="ftb.css">
+    <link rel="stylesheet" type="text/css" href="tickets.css">
+    
+    <script src="script.js"></script>
+    <script src="tickets.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="head">
+            <a href="index.html"> <img src="images/logo.png" width="800"> </a>
+        </header>
+        <nav>
+            <ul class="list">
+                <li> <a href="about.html"> О группе </a>
+                    <ul>
+                        <li> <a href="members/member_K.html"> Колян </a> </li>
+                        <li> <a href="members/member_L.html"> Лёха </a> </li>
+                        <li> <a href="members/member_M.html"> Миха </a> </li>
+                        <li> <a href="members/member_V.html"> Витя </a> </li>
+                        <li class="bottom_li"> <a href="members/member_E.html"> Егор </a> </li>
+                    </ul>
+                </li>
+                <li> <a href="concerts.html"> Концерты </a> </li>
+                <li> <a href="songs.html"> Песни </a> </li>
+                <li> <a href="photos.html"> Фото </a> </li>
+                <li> <a href="contacts.html"> Контакты </a> </li>
+                <li class="last_li"> <a href="tickets.html"> Билеты </a> </li>
+            </ul>
+        </nav>
+        <main>            
+            <h1>Бронирование билетов</h1>
+            
+            <section>
+
+                <p>На данной странице Вы можете оставить свои данные, чтобы мы оставили Вам бумажный билет, который Вы можете выкупить перед концертом.</p>
+
+            </section>
+
+            <section>
+
+                <h2>Пожалуйста, заполните анкету</h2>
+
+                <div class="ticket">
+                    <select name="concert" size=1>
+                        <option value ="12.12">12 декабря
+                        <option value ="15.01">15 января
+                        <option value ="19.02">19 февраля
+                        <option value ="3.03">3 марта
+                        <option value ="8.03">8 марта
+                    </select>
+                    <select name="sum" size=1 >
+                            <option value ="1">1
+                            <option value ="2">2
+                            <option value ="3">3
+                    </select>
+                    <input type="text" size=45 id="name" name="name" placeholder="Имя">
+                    <input type="text" size=45 id="sname" name="sname" placeholder="Фамилия">
+                    <input type="text" size=45 id="age" name="age" placeholder="Возраст">
+                    <input type="text" size=45 id="phone" name="phone" placeholder="Телефон">
+                    <input type="text" size=45 id="email" name="email" placeholder="Электронная почта">          
+                    <!--<p id="message1"></p><p id="message2"></p><p id="message3"></p><p id="message4"></p><p id="message5"></p>-->
+                    <input name="button" type="submit" value="Подтвердить" onclick="ValidMail();ValidPhone();ValidAge();ValidSname();ValidName();GetAlert();">         
+                    
+                </div>
+
+            </section>
+
+            <section>
+
+
+
+            </section>
+        </main>
+        <footer>
+            <ul class="list">
+                <li> <a href="about.html"> О группе </a> </li>
+                <li> <a href="concerts.html"> Концерты </a> </li>
+                <li> <a href="songs.html"> Песни </a> </li>
+                <li> <a href="photos.html"> Фото </a> </li>
+                <li> <a href="contacts.html"> Контакты </a> </li>
+                <li class="last_li"> <a href="tickets.html"> Билеты </a> </li>
+            </ul>
+        </footer>
+    </div>
+    <div id="scrollToTop" onclick="goUp();"> <img src="images/icons/up.png" width="50px" alt="вверх"> </div>
+</body>
+
+</html>
